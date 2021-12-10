@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapon_stories",
+  "info": {
+    "singularName": "weapon-story",
+    "pluralName": "weapon-stories",
+    "displayName": "Weapon Story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Axe",
+        "Chakram",
+        "Combat_Bracers",
+        "Hammer",
+        "Longsword",
+        "Mace",
+        "One_handed_Sword",
+        "Pole_Axe",
+        "Rod",
+        "Spear",
+        "Staff",
+        "Sword",
+        "Two_handed_Sword"
+      ]
+    },
+    "name": {
+      "displayName": "Weapon Story",
+      "type": "component",
+      "repeatable": false,
+      "component": "translations.weapon-story"
+    },
+    "slug": {
+      "type": "string",
+      "required": false,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "stories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collections-component.weapon-story"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_collections_component_glossary_definitions",
+  "info": {
+    "displayName": "Glossary Definition",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "translations": {
+      "displayName": "Glossary Definition",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.glossary-definition"
+    }
+  }
+}

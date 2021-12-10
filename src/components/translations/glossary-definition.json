@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_translations_glossary_definitions",
+  "info": {
+    "displayName": "Glossary Definition",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "definition": {
+      "type": "text"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

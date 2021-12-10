@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_builder_galleries",
+  "info": {
+    "displayName": "Gallery",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "gallery": {
+      "allowedTypes": [
+        "videos",
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

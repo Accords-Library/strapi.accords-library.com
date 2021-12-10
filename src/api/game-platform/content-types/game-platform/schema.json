@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_platforms",
+  "info": {
+    "singularName": "game-platform",
+    "pluralName": "game-platforms",
+    "displayName": "Game Platform",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "short": {
+      "type": "string"
+    }
+  }
+}

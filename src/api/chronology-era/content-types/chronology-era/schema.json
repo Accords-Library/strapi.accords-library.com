@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chronology_eras",
+  "info": {
+    "singularName": "chronology-era",
+    "pluralName": "chronology-eras",
+    "displayName": "Chronology Era",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "starting_year": {
+      "pluginOptions": {},
+      "type": "integer",
+      "max": 13000,
+      "min": 0,
+      "required": true
+    },
+    "ending_year": {
+      "pluginOptions": {},
+      "type": "integer",
+      "required": true,
+      "max": 13000,
+      "min": 0
+    },
+    "slug": {
+      "pluginOptions": {},
+      "type": "string",
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "displayName": "Chronology Era",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.chronology-era"
+    }
+  }
+}

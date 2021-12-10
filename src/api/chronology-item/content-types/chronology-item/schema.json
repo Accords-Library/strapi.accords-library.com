@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chronology_items",
+  "info": {
+    "singularName": "chronology-item",
+    "pluralName": "chronology-items",
+    "displayName": "Chronology Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "pluginOptions": {},
+      "type": "integer",
+      "required": true,
+      "max": 13000,
+      "min": 0
+    },
+    "month": {
+      "pluginOptions": {},
+      "type": "integer",
+      "max": 12,
+      "min": 1
+    },
+    "day": {
+      "pluginOptions": {},
+      "type": "integer",
+      "max": 31,
+      "min": 1
+    },
+    "displayed_date": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "translations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.chronology-item"
+    }
+  }
+}

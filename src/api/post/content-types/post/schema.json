@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "pluginOptions": {},
+      "type": "dynamiczone",
+      "components": [
+        "page-builder.text",
+        "page-builder.tabs",
+        "page-builder.gallery",
+        "page-builder.grid"
+      ]
+    },
+    "title": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "library_variants",
+  "info": {
+    "singularName": "library-variant",
+    "pluralName": "library-variants",
+    "displayName": "Library Variant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::library-item.library-item",
+      "mappedBy": "variants"
+    }
+  }
+}

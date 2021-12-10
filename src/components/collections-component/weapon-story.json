@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_collections_component_weapon_stories",
+  "info": {
+    "displayName": "Weapon Story",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "translations": {
+      "displayName": "Weapon Story Story",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.weapon-story-story"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "DOD1",
+        "DOD2",
+        "DOD3",
+        "NieR",
+        "NieR_Automata",
+        "NieR_1_22",
+        "SINoALICE",
+        "Reincarnation"
+      ],
+      "required": true
+    }
+  }
+}

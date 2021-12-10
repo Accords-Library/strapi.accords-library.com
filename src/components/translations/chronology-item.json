@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_translations_chronology_items",
+  "info": {
+    "displayName": "Chronology Item",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

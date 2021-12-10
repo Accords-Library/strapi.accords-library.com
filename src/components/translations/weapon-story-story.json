@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_translations_weapon_story_stories",
+  "info": {
+    "displayName": "Weapon Story Story",
+    "icon": "passport",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "level_1": {
+      "type": "text"
+    },
+    "level_2": {
+      "type": "text"
+    },
+    "level_3": {
+      "type": "text"
+    },
+    "level_4": {
+      "type": "text"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

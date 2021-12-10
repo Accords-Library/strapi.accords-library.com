@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "singularName": "language",
+    "pluralName": "languages",
+    "displayName": "Language",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^[a-z]+-[a-z]+$|^[a-z]+$"
+    },
+    "localized_name": {
+      "type": "string"
+    }
+  }
+}

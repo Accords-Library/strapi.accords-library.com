@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "library_items",
+  "info": {
+    "singularName": "library-item",
+    "pluralName": "library-items",
+    "displayName": "Library Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "slug": {
+      "pluginOptions": {},
+      "type": "string",
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "required": true,
+      "unique": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "subitems": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::library-item.library-item",
+      "inversedBy": "subitem_of"
+    },
+    "subitem_of": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::library-item.library-item",
+      "inversedBy": "subitems"
+    },
+    "root_item": {
+      "pluginOptions": {},
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "basics.price"
+    },
+    "variants": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::library-variant.library-variant",
+      "inversedBy": "items"
+    },
+    "metadata": {
+      "pluginOptions": {},
+      "type": "dynamiczone",
+      "components": [
+        "metadata.books",
+        "metadata.video"
+      ],
+      "max": 1
+    },
+    "size": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "basics.size"
+    }
+  }
+}

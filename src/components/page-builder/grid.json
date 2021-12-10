@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_page_builder_grids",
+  "info": {
+    "displayName": "Grid",
+    "icon": "grip-horizontal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "column_count": {
+      "type": "integer",
+      "min": 1,
+      "max": 10,
+      "required": true,
+      "default": 1
+    },
+    "panes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-builder-component.pane"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_metadata_videos",
+  "info": {
+    "displayName": "Video",
+    "icon": "video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resolution": {
+      "type": "enumeration",
+      "enum": [
+        "SD_480p",
+        "HD_720p",
+        "FullHD_1080p",
+        "QuadHD_2160p"
+      ]
+    },
+    "audio_languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "sub_languages": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

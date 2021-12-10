@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_translations_glossary_items",
+  "info": {
+    "displayName": "Glossary Item",
+    "icon": "kiwi-bird",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

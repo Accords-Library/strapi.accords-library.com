@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_basics_sizes",
+  "info": {
+    "displayName": "Size",
+    "icon": "arrows-alt-h",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "width": {
+      "type": "integer",
+      "min": 0
+    },
+    "height": {
+      "type": "integer",
+      "min": 0
+    },
+    "thickness": {
+      "type": "integer",
+      "min": 0
+    }
+  }
+}
