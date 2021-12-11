@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "library_contents",
+  "info": {
+    "singularName": "library-content",
+    "pluralName": "library-contents",
+    "displayName": "Library Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "displayName": "Library Content",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.library-content"
+    },
+    "library_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::library-item.library-item",
+      "inversedBy": "contents"
+    },
+    "scan_set": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scan-set.scan-set",
+      "inversedBy": "library_content"
+    },
+    "text_set": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::text-set.text-set",
+      "inversedBy": "library_contents"
+    },
+    "range": {
+      "type": "dynamiczone",
+      "components": [
+        "range.page-range",
+        "range.video-range"
+      ],
+      "required": true,
+      "max": 1
+    }
+  }
+}

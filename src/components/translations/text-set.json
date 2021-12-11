@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_translations_text_sets",
+  "info": {
+    "displayName": "Text Set",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "source": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.source",
+      "required": true
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

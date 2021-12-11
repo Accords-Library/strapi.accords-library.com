@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_translations_library_contents",
+  "info": {
+    "displayName": "Library Content",
+    "icon": "torah"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

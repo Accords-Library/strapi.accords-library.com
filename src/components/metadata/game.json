@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_metadata_games",
+  "info": {
+    "displayName": "Game",
+    "icon": "gamepad"
+  },
+  "options": {},
+  "attributes": {
+    "game_platform": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game-platform.game-platform"
+    }
+  }
+}

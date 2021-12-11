@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_translations_scan_sets",
+  "info": {
+    "displayName": "Scan Set",
+    "icon": "book-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "pages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "source": {
+      "displayName": "Source",
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.source",
+      "required": true
+    }
+  }
+}

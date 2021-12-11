@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_range_video_ranges",
+  "info": {
+    "displayName": "Video Range",
+    "icon": "file-video"
+  },
+  "options": {},
+  "attributes": {
+    "starting_time": {
+      "type": "time"
+    },
+    "ending_time": {
+      "type": "time"
+    }
+  }
+}
