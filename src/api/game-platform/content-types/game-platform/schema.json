@@ -4,7 +4,7 @@
   "info": {
     "singularName": "game-platform",
     "pluralName": "game-platforms",
-    "displayName": "Game Platform",
+    "displayName": "Game Platforms",
     "description": ""
   },
   "options": {
@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "short": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

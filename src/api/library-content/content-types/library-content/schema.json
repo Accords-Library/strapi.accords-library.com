@@ -4,7 +4,7 @@
   "info": {
     "singularName": "library-content",
     "pluralName": "library-contents",
-    "displayName": "Library Content",
+    "displayName": "Library Contents",
     "description": ""
   },
   "options": {
@@ -46,7 +46,7 @@
       "type": "dynamiczone",
       "components": [
         "range.page-range",
-        "range.video-range"
+        "range.audiovisual-range"
       ],
       "required": true,
       "max": 1

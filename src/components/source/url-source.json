@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_source_url_sources",
+  "info": {
+    "displayName": "URL Source",
+    "icon": "laptop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    },
+    "source": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.source",
+      "required": true
+    }
+  }
+}

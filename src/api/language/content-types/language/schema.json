@@ -4,7 +4,7 @@
   "info": {
     "singularName": "language",
     "pluralName": "languages",
-    "displayName": "Language",
+    "displayName": "Languages",
     "description": ""
   },
   "options": {
@@ -23,7 +23,8 @@
       "regex": "^[a-z]+-[a-z]+$|^[a-z]+$"
     },
     "localized_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

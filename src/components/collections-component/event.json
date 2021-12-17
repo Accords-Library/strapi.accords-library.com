@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_collections_component_events",
+  "info": {
+    "displayName": "Event",
+    "icon": "bullseye",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "translations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.chronology-item"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
+    }
+  }
+}

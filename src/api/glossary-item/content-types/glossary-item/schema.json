@@ -4,7 +4,7 @@
   "info": {
     "singularName": "glossary-item",
     "pluralName": "glossary-items",
-    "displayName": "Glossary Item",
+    "displayName": "Glossary Items",
     "description": ""
   },
   "options": {
@@ -12,15 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "Character",
-        "Place",
-        "Term",
-        "Common_noun"
-      ]
-    },
     "title": {
       "displayName": "Glossary Item",
       "type": "component",
@@ -38,6 +29,11 @@
       "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
       "unique": true,
       "required": true
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::glossary-item-type.glossary-item-type"
     }
   }
 }

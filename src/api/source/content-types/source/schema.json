@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sources",
+  "info": {
+    "singularName": "source",
+    "pluralName": "sources",
+    "displayName": "Sources",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "source": {
+      "type": "dynamiczone",
+      "components": [
+        "source.url-source",
+        "source.library-text"
+      ],
+      "max": 1,
+      "min": 1,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

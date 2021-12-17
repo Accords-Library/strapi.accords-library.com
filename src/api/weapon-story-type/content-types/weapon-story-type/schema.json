@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "scan_sets",
+  "collectionName": "weapon_story_types",
   "info": {
-    "singularName": "scan-set",
-    "pluralName": "scan-sets",
-    "displayName": "Scan Sets",
+    "singularName": "weapon-story-type",
+    "pluralName": "weapon-story-types",
+    "displayName": "Weapon Story Types",
     "description": ""
   },
   "options": {
@@ -19,16 +19,10 @@
       "required": true
     },
     "translations": {
-      "displayName": "Scan Set",
+      "displayName": "Weapon Story Type",
       "type": "component",
       "repeatable": true,
-      "component": "translations.scan-set"
-    },
-    "library_content": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::library-content.library-content",
-      "mappedBy": "scan_set"
+      "component": "translations.weapon-story-type"
     }
   }
 }

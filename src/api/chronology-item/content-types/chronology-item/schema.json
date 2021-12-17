@@ -4,7 +4,7 @@
   "info": {
     "singularName": "chronology-item",
     "pluralName": "chronology-items",
-    "displayName": "Chronology Item",
+    "displayName": "Chronology Items",
     "description": ""
   },
   "options": {
@@ -35,10 +35,11 @@
       "pluginOptions": {},
       "type": "string"
     },
-    "translations": {
+    "events": {
+      "displayName": "Event",
       "type": "component",
       "repeatable": true,
-      "component": "translations.chronology-item"
+      "component": "collections-component.event"
     }
   }
 }

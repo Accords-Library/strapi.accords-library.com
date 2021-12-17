@@ -14,18 +14,14 @@
       "component": "translations.weapon-story-story"
     },
     "category": {
-      "type": "enumeration",
-      "enum": [
-        "DOD1",
-        "DOD2",
-        "DOD3",
-        "NieR",
-        "NieR_Automata",
-        "NieR_1_22",
-        "SINoALICE",
-        "Reincarnation"
-      ],
-      "required": true
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
     }
   }
 }

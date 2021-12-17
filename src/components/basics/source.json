@@ -41,6 +41,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::language.language"
+    },
+    "footnotes": {
+      "type": "text"
     }
   }
 }

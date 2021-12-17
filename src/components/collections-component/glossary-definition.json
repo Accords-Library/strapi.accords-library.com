@@ -17,6 +17,11 @@
       "type": "component",
       "repeatable": true,
       "component": "translations.glossary-definition"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
     }
   }
 }

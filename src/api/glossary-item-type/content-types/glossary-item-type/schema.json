@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glossary_item_types",
+  "info": {
+    "singularName": "glossary-item-type",
+    "pluralName": "glossary-item-types",
+    "displayName": "Glossary Item Types"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
