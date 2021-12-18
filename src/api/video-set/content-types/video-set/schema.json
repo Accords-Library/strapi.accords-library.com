@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "text_sets",
+  "collectionName": "video_sets",
   "info": {
-    "singularName": "text-set",
-    "pluralName": "text-sets",
-    "displayName": "🟡 Text Sets",
+    "singularName": "video-set",
+    "pluralName": "video-sets",
+    "displayName": "🟡 Video Sets",
     "description": ""
   },
   "options": {
@@ -14,21 +14,21 @@
   "attributes": {
     "slug": {
       "type": "string",
-      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
       "unique": true,
-      "required": true
+      "required": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "translations": {
-      "displayName": "Text Set",
+      "displayName": "Video Sets",
       "type": "component",
       "repeatable": true,
-      "component": "translations.text-set"
+      "component": "translations.video-sets"
     },
     "library_contents": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::library-content.library-content",
-      "mappedBy": "text_set"
+      "mappedBy": "video_set"
     }
   }
 }

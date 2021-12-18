@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_range_time_ranges",
+  "info": {
+    "displayName": "Time Range",
+    "icon": "hourglass-half"
+  },
+  "options": {},
+  "attributes": {
+    "starting_time": {
+      "type": "time"
+    },
+    "ending_time": {
+      "type": "time"
+    }
+  }
+}

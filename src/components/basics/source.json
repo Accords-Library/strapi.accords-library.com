@@ -44,6 +44,11 @@
     },
     "footnotes": {
       "type": "text"
+    },
+    "Subbers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
     }
   }
 }

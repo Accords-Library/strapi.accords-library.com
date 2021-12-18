@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_translations_audio_sets",
+  "info": {
+    "displayName": "Audio Sets",
+    "icon": "file-audio"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

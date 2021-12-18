@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_range_others",
+  "info": {
+    "displayName": "Other",
+    "icon": "question-circle"
+  },
+  "options": {},
+  "attributes": {
+    "note": {
+      "type": "text"
+    }
+  }
+}

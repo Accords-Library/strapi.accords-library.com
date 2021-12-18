@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_translations_video_sets",
+  "info": {
+    "displayName": "Video Sets",
+    "icon": "file-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "video_embed": {
+      "type": "string"
+    },
+    "source": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.source",
+      "required": true
+    },
+    "subfile": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

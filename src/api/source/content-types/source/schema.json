@@ -4,7 +4,7 @@
   "info": {
     "singularName": "source",
     "pluralName": "sources",
-    "displayName": "Sources",
+    "displayName": "⚫ Sources",
     "description": ""
   },
   "options": {
@@ -24,7 +24,8 @@
     },
     "name": {
       "type": "string",
-      "required": false
+      "required": true,
+      "unique": true
     }
   }
 }

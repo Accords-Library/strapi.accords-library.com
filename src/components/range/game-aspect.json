@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_range_game_aspects",
+  "info": {
+    "displayName": "Game Aspect",
+    "icon": "tv"
+  },
+  "options": {},
+  "attributes": {
+    "note": {
+      "type": "text"
+    }
+  }
+}

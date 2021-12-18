@@ -4,7 +4,8 @@
   "info": {
     "singularName": "glossary-item-type",
     "pluralName": "glossary-item-types",
-    "displayName": "Glossary Item Types"
+    "displayName": "🟣 Glossary Item Types",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false

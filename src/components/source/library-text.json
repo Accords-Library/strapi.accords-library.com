@@ -2,7 +2,8 @@
   "collectionName": "components_source_library_texts",
   "info": {
     "displayName": "Library Text",
-    "icon": "align-right"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,12 +11,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::text-set.text-set"
-    },
-    "range": {
-      "type": "component",
-      "repeatable": false,
-      "component": "range.page-range",
-      "required": true
     }
   }
 }
