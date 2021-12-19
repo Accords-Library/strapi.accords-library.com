@@ -13,7 +13,8 @@
       "target": "api::language.language"
     },
     "video_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "video_embed": {
       "type": "string"
@@ -25,11 +26,23 @@
       "required": true
     },
     "subfile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Incomplete",
+        "Draft",
+        "Review",
+        "Done"
       ],
-      "type": "media",
-      "multiple": false
+      "required": true,
+      "default": "Incomplete"
     }
   }
 }

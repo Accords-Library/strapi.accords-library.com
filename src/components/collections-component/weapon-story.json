@@ -11,7 +11,8 @@
       "displayName": "Weapon Story Story",
       "type": "component",
       "repeatable": true,
-      "component": "translations.weapon-story-story"
+      "component": "translations.weapon-story-story",
+      "required": false
     },
     "category": {
       "type": "relation",
