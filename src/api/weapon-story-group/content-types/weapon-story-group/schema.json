@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapon_story_groups",
+  "info": {
+    "singularName": "weapon-story-group",
+    "pluralName": "weapon-story-groups",
+    "displayName": "🟤 Weapon Story Groups",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "weapons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::weapon-story.weapon-story",
+      "mappedBy": "weapon_group"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    }
+  }
+}

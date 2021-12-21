@@ -14,15 +14,15 @@
       "component": "translations.weapon-story-story",
       "required": false
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
-    },
     "source": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::source.source"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
     }
   }
 }

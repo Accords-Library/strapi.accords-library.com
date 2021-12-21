@@ -35,11 +35,18 @@
       "target": "api::weapon-story-type.weapon-story-type"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "weapon_group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::weapon-story-group.weapon-story-group",
+      "inversedBy": "weapons"
     }
   }
 }
