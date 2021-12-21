@@ -20,12 +20,6 @@
         "files"
       ]
     },
-    "source": {
-      "type": "component",
-      "repeatable": false,
-      "component": "basics.source",
-      "required": true
-    },
     "status": {
       "type": "enumeration",
       "enum": [
@@ -35,6 +29,12 @@
         "Done"
       ],
       "default": "Incomplete",
+      "required": true
+    },
+    "credits": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.credits",
       "required": true
     }
   }

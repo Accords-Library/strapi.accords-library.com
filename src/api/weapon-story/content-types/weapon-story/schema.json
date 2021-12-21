@@ -33,6 +33,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::weapon-story-type.weapon-story-type"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -16,10 +16,10 @@
     "note": {
       "type": "text"
     },
-    "source": {
+    "credits": {
       "type": "component",
       "repeatable": false,
-      "component": "basics.source",
+      "component": "basics.credits",
       "required": true
     }
   }

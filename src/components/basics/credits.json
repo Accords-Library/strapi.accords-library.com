@@ -1,21 +1,16 @@
 {
-  "collectionName": "components_basics_sources",
+  "collectionName": "components_basics_credits",
   "info": {
-    "displayName": "Source",
-    "icon": "book-reader",
+    "displayName": "Credits",
+    "icon": "user",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "scanners": {
+    "source_language": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::recorder.recorder"
-    },
-    "cleaners": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::recorder.recorder"
+      "relation": "oneToOne",
+      "target": "api::language.language"
     },
     "transcribers": {
       "type": "relation",
@@ -32,23 +27,28 @@
       "relation": "oneToMany",
       "target": "api::recorder.recorder"
     },
+    "scanners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "cleaners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
     "typesetters": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::recorder.recorder"
     },
-    "source_language": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::language.language"
-    },
-    "footnotes": {
-      "type": "text"
-    },
-    "Subbers": {
+    "subbers": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::recorder.recorder"
+    },
+    "footnotes": {
+      "type": "text"
     }
   }
 }

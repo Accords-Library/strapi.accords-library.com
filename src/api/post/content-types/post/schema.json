@@ -12,24 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "content": {
-      "pluginOptions": {},
-      "type": "dynamiczone",
-      "components": [
-        "page-builder.text",
-        "page-builder.tabs",
-        "page-builder.gallery",
-        "page-builder.grid"
-      ]
-    },
-    "title": {
-      "pluginOptions": {},
-      "type": "string"
-    },
     "authors": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::recorder.recorder"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "translations": {
+      "displayName": "Posts",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.posts"
     }
   }
 }

@@ -19,12 +19,6 @@
     "video_embed": {
       "type": "string"
     },
-    "source": {
-      "type": "component",
-      "repeatable": false,
-      "component": "basics.source",
-      "required": true
-    },
     "subfile": {
       "type": "media",
       "multiple": false,
@@ -43,6 +37,12 @@
       ],
       "required": true,
       "default": "Incomplete"
+    },
+    "credits": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.credits",
+      "required": true
     }
   }
 }

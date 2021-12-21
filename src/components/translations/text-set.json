@@ -10,12 +10,6 @@
     "text": {
       "type": "richtext"
     },
-    "source": {
-      "type": "component",
-      "repeatable": false,
-      "component": "basics.source",
-      "required": true
-    },
     "language": {
       "type": "relation",
       "relation": "oneToOne",
@@ -30,6 +24,12 @@
         "Done"
       ],
       "default": "Incomplete",
+      "required": true
+    },
+    "credits": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.credits",
       "required": true
     }
   }
