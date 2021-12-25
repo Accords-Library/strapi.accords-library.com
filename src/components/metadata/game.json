@@ -2,14 +2,35 @@
   "collectionName": "components_metadata_games",
   "info": {
     "displayName": "Game",
-    "icon": "gamepad"
+    "icon": "gamepad",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "game_platform": {
+    "platform": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::game-platform.game-platform"
+    },
+    "demo": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "audio_languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "sub_languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "interface_languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
     }
   }
 }

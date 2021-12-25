@@ -73,7 +73,8 @@
       "components": [
         "metadata.books",
         "metadata.video",
-        "metadata.game"
+        "metadata.game",
+        "metadata.audio"
       ],
       "max": 1
     },

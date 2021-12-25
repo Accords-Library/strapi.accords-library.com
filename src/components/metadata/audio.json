@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_metadata_audio",
+  "info": {
+    "displayName": "Audio",
+    "icon": "music"
+  },
+  "options": {},
+  "attributes": {
+    "subtype": {
+      "type": "enumeration",
+      "enum": [
+        "Soundtrack",
+        "Audiobook",
+        "Other"
+      ],
+      "default": "Soundtrack",
+      "required": true
+    },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_metadata_books",
   "info": {
-    "displayName": "Book",
+    "displayName": "Textual",
     "icon": "book",
     "description": ""
   },
@@ -14,7 +14,7 @@
         "Hardcover"
       ],
       "default": "Paperback",
-      "required": true
+      "required": false
     },
     "page_count": {
       "type": "integer",
@@ -24,6 +24,29 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::language.language"
+    },
+    "page_order": {
+      "type": "enumeration",
+      "enum": [
+        "Left_to_Right",
+        "Right_to_Left"
+      ],
+      "required": true,
+      "default": "Left_to_Right"
+    },
+    "subtype": {
+      "type": "enumeration",
+      "enum": [
+        "Book",
+        "Manga",
+        "Comic",
+        "Magazine",
+        "Novel",
+        "Script",
+        "Scorebook"
+      ],
+      "required": true,
+      "default": "Book"
     }
   }
 }

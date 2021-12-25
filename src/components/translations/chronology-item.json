@@ -29,7 +29,7 @@
         "Review",
         "Done"
       ],
-      "default": "Incomplete",
+      "default": "Done",
       "required": true
     }
   }
