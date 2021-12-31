@@ -89,6 +89,15 @@
       "relation": "oneToMany",
       "target": "api::library-content.library-content",
       "mappedBy": "library_item"
+    },
+    "description": {
+      "type": "text"
+    },
+    "release_date": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.datepicker",
+      "required": false
     }
   }
 }

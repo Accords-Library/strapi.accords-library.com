@@ -35,18 +35,9 @@
       "default": "Left_to_Right"
     },
     "subtype": {
-      "type": "enumeration",
-      "enum": [
-        "Book",
-        "Manga",
-        "Comic",
-        "Magazine",
-        "Novel",
-        "Script",
-        "Scorebook"
-      ],
-      "required": true,
-      "default": "Book"
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::textual-subtype.textual-subtype"
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_basics_datepickers",
+  "info": {
+    "displayName": "datepicker",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "month": {
+      "type": "integer",
+      "max": 12,
+      "min": 1
+    },
+    "day": {
+      "type": "integer",
+      "max": 31,
+      "min": 1
+    }
+  }
+}
