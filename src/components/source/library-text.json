@@ -6,11 +6,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "text_set": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::text-set.text-set"
-    }
-  }
+  "attributes": {}
 }

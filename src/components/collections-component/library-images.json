@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_collections_component_library_images",
+  "info": {
+    "displayName": "Library Images",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cover": {
+      "displayName": "Library Cover",
+      "type": "component",
+      "repeatable": false,
+      "component": "collections-component.library-cover"
+    },
+    "dust_jacket": {
+      "type": "component",
+      "repeatable": false,
+      "component": "collections-component.library-dust-jacket"
+    },
+    "obi_belt": {
+      "displayName": "Library Obi Belt",
+      "type": "component",
+      "repeatable": false,
+      "component": "collections-component.library-obi-belt"
+    }
+  }
+}

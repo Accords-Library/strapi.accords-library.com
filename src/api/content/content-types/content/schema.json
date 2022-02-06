@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "🟡 Contents",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::content-type.content-type"
+    },
+    "titles": {
+      "displayName": "title",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.title"
+    },
+    "ranged_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ranged-content.ranged-content",
+      "mappedBy": "content"
+    },
+    "text_set": {
+      "displayName": "text_set",
+      "type": "component",
+      "repeatable": true,
+      "component": "sets.text-set"
+    }
+  }
+}

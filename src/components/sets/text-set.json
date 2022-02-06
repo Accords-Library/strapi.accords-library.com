@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_sets_text_sets",
+  "info": {
+    "displayName": "text_set",
+    "icon": "pencil-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Incomplete",
+        "Draft",
+        "Review",
+        "Done"
+      ],
+      "default": "Incomplete",
+      "required": true
+    },
+    "source_language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "transcribers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "translators": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "proofreaders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

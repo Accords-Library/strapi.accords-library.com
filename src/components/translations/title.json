@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_translations_titles",
+  "info": {
+    "displayName": "title",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

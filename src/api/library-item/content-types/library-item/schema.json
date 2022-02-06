@@ -84,12 +84,6 @@
       "pluginOptions": {},
       "component": "basics.size"
     },
-    "contents": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::library-content.library-content",
-      "mappedBy": "library_item"
-    },
     "release_date": {
       "type": "component",
       "repeatable": false,
@@ -103,12 +97,24 @@
       "component": "translations.library-items"
     },
     "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ranged-content.ranged-content",
+      "mappedBy": "library_item"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": false,
+      "component": "collections-component.library-images"
     }
   }
 }

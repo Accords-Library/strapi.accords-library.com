@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ranged_contents",
+  "info": {
+    "singularName": "ranged-content",
+    "pluralName": "ranged-contents",
+    "displayName": "🟠 Ranged Contents",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "range": {
+      "type": "dynamiczone",
+      "components": [
+        "range.page-range",
+        "range.time-range",
+        "range.other"
+      ],
+      "max": 1,
+      "min": 1
+    },
+    "scan_set": {
+      "displayName": "scan_set",
+      "type": "component",
+      "repeatable": true,
+      "component": "sets.scan-set"
+    },
+    "library_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::library-item.library-item",
+      "inversedBy": "contents"
+    },
+    "content": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::content.content",
+      "inversedBy": "ranged_contents"
+    }
+  }
+}

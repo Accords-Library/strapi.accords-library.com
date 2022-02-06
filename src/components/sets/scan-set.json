@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_sets_scan_sets",
+  "info": {
+    "displayName": "scan_set",
+    "icon": "file-contract",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Incomplete",
+        "Draft",
+        "Review",
+        "Done"
+      ],
+      "default": "Incomplete",
+      "required": true
+    },
+    "pages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "source_language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "scanners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "cleaners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "typesetters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}
