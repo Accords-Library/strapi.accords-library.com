@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_sets_audio_sets",
+  "info": {
+    "displayName": "audio_set",
+    "icon": "headphones"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Incomplete",
+        "Draft",
+        "Review",
+        "Done"
+      ],
+      "default": "Incomplete"
+    },
+    "audiofile": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "source_language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "dubbers": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::recorder.recorder"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

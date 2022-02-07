@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_sets_video_sets",
+  "info": {
+    "displayName": "Video Set",
+    "icon": "film"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Incomplete",
+        "Draft",
+        "Review",
+        "Done"
+      ],
+      "default": "Incomplete",
+      "required": true
+    },
+    "source_language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "subfile": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "subbers": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::recorder.recorder"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}
