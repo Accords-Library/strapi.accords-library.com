@@ -57,6 +57,13 @@
       "type": "component",
       "repeatable": true,
       "component": "sets.audio-set"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

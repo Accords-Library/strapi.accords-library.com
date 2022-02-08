@@ -74,7 +74,9 @@
         "metadata.books",
         "metadata.video",
         "metadata.game",
-        "metadata.audio"
+        "metadata.audio",
+        "metadata.merch",
+        "metadata.other"
       ],
       "max": 1
     },

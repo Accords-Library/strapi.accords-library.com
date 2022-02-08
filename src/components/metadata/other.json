@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_metadata_others",
+  "info": {
+    "displayName": "Other",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtype": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::other-subtype.other-subtype"
+    }
+  }
+}

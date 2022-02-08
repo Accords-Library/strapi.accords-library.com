@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_metadata_merches",
+  "info": {
+    "displayName": "Merch",
+    "icon": "gift"
+  },
+  "options": {},
+  "attributes": {
+    "merch_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::merch-item.merch-item"
+    }
+  }
+}

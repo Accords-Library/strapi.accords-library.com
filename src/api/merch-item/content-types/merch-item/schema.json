@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "merch_items",
+  "info": {
+    "singularName": "merch-item",
+    "pluralName": "merch-items",
+    "displayName": "Merch Items"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    }
+  }
+}
