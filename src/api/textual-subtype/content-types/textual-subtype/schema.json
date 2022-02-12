@@ -17,6 +17,11 @@
       "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
       "unique": true,
       "required": true
+    },
+    "titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.simple-title"
     }
   }
 }

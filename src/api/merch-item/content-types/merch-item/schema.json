@@ -4,7 +4,8 @@
   "info": {
     "singularName": "merch-item",
     "pluralName": "merch-items",
-    "displayName": "Merch Items"
+    "displayName": "🔵 Merch Items",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -15,6 +16,28 @@
       "required": true,
       "unique": true,
       "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "library_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::library-item.library-item",
+      "inversedBy": "submerchs"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

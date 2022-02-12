@@ -1,0 +1,152 @@
+{
+  "kind": "collectionType",
+  "collectionName": "website_interfaces",
+  "info": {
+    "singularName": "website-interface",
+    "pluralName": "website-interfaces",
+    "displayName": "⚫ Website Interfaces",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "main_library": {
+      "type": "string"
+    },
+    "main_library_description": {
+      "type": "string"
+    },
+    "main_hub": {
+      "type": "string"
+    },
+    "main_hub_description": {
+      "type": "string"
+    },
+    "main_chronology": {
+      "type": "string"
+    },
+    "main_chronology_description": {
+      "type": "string"
+    },
+    "main_news": {
+      "type": "string"
+    },
+    "main_data": {
+      "type": "string"
+    },
+    "main_merch": {
+      "type": "string"
+    },
+    "main_gallery": {
+      "type": "string"
+    },
+    "main_archives": {
+      "type": "string"
+    },
+    "main_about_us": {
+      "type": "string"
+    },
+    "main_licensing": {
+      "type": "text"
+    },
+    "main_copyright": {
+      "type": "text"
+    },
+    "library_description": {
+      "type": "text"
+    },
+    "library_item_summary": {
+      "type": "string"
+    },
+    "library_item_gallery": {
+      "type": "string"
+    },
+    "library_item_details": {
+      "type": "string"
+    },
+    "library_item_subitems": {
+      "type": "string"
+    },
+    "library_item_variants": {
+      "type": "string"
+    },
+    "library_item_content": {
+      "type": "string"
+    },
+    "global_return_label": {
+      "type": "string"
+    },
+    "global_subitem_of": {
+      "type": "string"
+    },
+    "global_type": {
+      "type": "string"
+    },
+    "global_width": {
+      "type": "string"
+    },
+    "global_height": {
+      "type": "string"
+    },
+    "global_thickness": {
+      "type": "string"
+    },
+    "global_binding": {
+      "type": "string"
+    },
+    "global_language": {
+      "type": "string"
+    },
+    "global_languages": {
+      "type": "string"
+    },
+    "global_page": {
+      "type": "string"
+    },
+    "global_pages": {
+      "type": "string"
+    },
+    "global_page_order": {
+      "type": "string"
+    },
+    "global_release_date": {
+      "type": "string"
+    },
+    "global_price": {
+      "type": "string"
+    },
+    "library_item_physical_size": {
+      "type": "string"
+    },
+    "library_item_type_information": {
+      "type": "string"
+    },
+    "chronology_description": {
+      "type": "text"
+    },
+    "chronology_timelines": {
+      "type": "string"
+    },
+    "chronology_timelines_description": {
+      "type": "string"
+    },
+    "chronology_overview": {
+      "type": "string"
+    },
+    "chronology_overview_description": {
+      "type": "string"
+    },
+    "chronology_walkthrough": {
+      "type": "string"
+    },
+    "chronology_walkthrough_description": {
+      "type": "string"
+    }
+  }
+}

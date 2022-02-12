@@ -61,12 +61,6 @@
       "pluginOptions": {},
       "component": "basics.price"
     },
-    "variants": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::library-variant.library-variant",
-      "inversedBy": "items"
-    },
     "metadata": {
       "pluginOptions": {},
       "type": "dynamiczone",
@@ -75,7 +69,6 @@
         "metadata.video",
         "metadata.game",
         "metadata.audio",
-        "metadata.merch",
         "metadata.other"
       ],
       "max": 1
@@ -117,6 +110,22 @@
       "type": "component",
       "repeatable": false,
       "component": "collections-component.library-images"
+    },
+    "digital": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "primary": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "submerchs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::merch-item.merch-item",
+      "mappedBy": "library_items"
     }
   }
 }

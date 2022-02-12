@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_translations_titles",
+  "collectionName": "components_translations_simple_titles",
   "info": {
-    "displayName": "tri title",
-    "icon": "feather",
+    "displayName": "simple-title",
+    "icon": "align-justify",
     "description": ""
   },
   "options": {},
@@ -15,12 +15,6 @@
     "title": {
       "type": "string",
       "required": true
-    },
-    "subtitle": {
-      "type": "string"
-    },
-    "pre_title": {
-      "type": "string"
     }
   }
 }
