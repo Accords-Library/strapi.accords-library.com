@@ -147,6 +147,60 @@
     },
     "chronology_walkthrough_description": {
       "type": "string"
+    },
+    "library_item_front_matter": {
+      "type": "string"
+    },
+    "library_item_back_matter": {
+      "type": "string"
+    },
+    "library_item_type_textual": {
+      "type": "string"
+    },
+    "library_item_type_audio": {
+      "type": "string"
+    },
+    "library_item_type_game": {
+      "type": "string"
+    },
+    "library_item_type_video": {
+      "type": "string"
+    },
+    "library_item_type_other": {
+      "type": "string"
+    },
+    "library_item_open_content": {
+      "type": "string"
+    },
+    "library_item_view_scans": {
+      "type": "string"
+    },
+    "content_read_content": {
+      "type": "string"
+    },
+    "content_watch_content": {
+      "type": "string"
+    },
+    "content_listen_content": {
+      "type": "string"
+    },
+    "global_category": {
+      "type": "string"
+    },
+    "global_categories": {
+      "type": "string"
+    },
+    "global_paperback": {
+      "type": "string"
+    },
+    "global_hardcover": {
+      "type": "string"
+    },
+    "global_left_to_right": {
+      "type": "string"
+    },
+    "global_right_to_left": {
+      "type": "string"
     }
   }
 }

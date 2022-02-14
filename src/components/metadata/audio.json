@@ -7,11 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "languages": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::language.language"
-    },
     "subtype": {
       "type": "relation",
       "relation": "oneToOne",

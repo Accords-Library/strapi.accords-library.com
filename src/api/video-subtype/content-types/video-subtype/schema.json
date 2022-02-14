@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_subtypes",
+  "info": {
+    "singularName": "video-subtype",
+    "pluralName": "video-subtypes",
+    "displayName": "Video Subtypes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "unique": true,
+      "required": true
+    },
+    "titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.simple-title"
+    }
+  }
+}
