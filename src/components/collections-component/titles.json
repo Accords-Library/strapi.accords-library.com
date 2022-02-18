@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_collections_component_titles",
+  "info": {
+    "displayName": "titles",
+    "icon": "bullhorn"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

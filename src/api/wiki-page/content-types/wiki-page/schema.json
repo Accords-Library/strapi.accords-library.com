@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wiki_pages",
+  "info": {
+    "singularName": "wiki-page",
+    "pluralName": "wiki-pages",
+    "displayName": "🟥 Wiki Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "wiki_set": {
+      "displayName": "wiki_set",
+      "type": "component",
+      "repeatable": true,
+      "component": "sets.wiki-set"
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wiki-page-type.wiki-page-type"
+    }
+  }
+}

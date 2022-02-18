@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_collections_component_wiki_definitions",
+  "info": {
+    "displayName": "wiki-definition",
+    "icon": "pen"
+  },
+  "options": {},
+  "attributes": {
+    "definition": {
+      "type": "text"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
+    }
+  }
+}

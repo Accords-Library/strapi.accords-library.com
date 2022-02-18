@@ -22,22 +22,7 @@
     "main_library_description": {
       "type": "string"
     },
-    "main_hub": {
-      "type": "string"
-    },
-    "main_hub_description": {
-      "type": "string"
-    },
-    "main_chronology": {
-      "type": "string"
-    },
-    "main_chronology_description": {
-      "type": "string"
-    },
     "main_news": {
-      "type": "string"
-    },
-    "main_data": {
       "type": "string"
     },
     "main_merch": {
@@ -127,27 +112,6 @@
     "library_item_type_information": {
       "type": "string"
     },
-    "chronology_description": {
-      "type": "text"
-    },
-    "chronology_timelines": {
-      "type": "string"
-    },
-    "chronology_timelines_description": {
-      "type": "string"
-    },
-    "chronology_overview": {
-      "type": "string"
-    },
-    "chronology_overview_description": {
-      "type": "string"
-    },
-    "chronology_walkthrough": {
-      "type": "string"
-    },
-    "chronology_walkthrough_description": {
-      "type": "string"
-    },
     "library_item_front_matter": {
       "type": "string"
     },
@@ -201,6 +165,51 @@
     },
     "global_right_to_left": {
       "type": "string"
+    },
+    "main_wiki": {
+      "type": "string"
+    },
+    "main_wiki_description": {
+      "type": "string"
+    },
+    "main_chronicles": {
+      "type": "string"
+    },
+    "main_chronicles_description": {
+      "type": "string"
+    },
+    "library_items": {
+      "type": "string"
+    },
+    "library_items_description": {
+      "type": "string"
+    },
+    "library_content": {
+      "type": "string"
+    },
+    "library_content_description": {
+      "type": "string"
+    },
+    "wiki_description": {
+      "type": "text"
+    },
+    "news_description": {
+      "type": "text"
+    },
+    "chronicles_description": {
+      "type": "text"
+    },
+    "gallery_description": {
+      "type": "text"
+    },
+    "archives_description": {
+      "type": "text"
+    },
+    "about_us_description": {
+      "type": "text"
+    },
+    "merch_description": {
+      "type": "text"
     }
   }
 }
