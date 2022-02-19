@@ -42,6 +42,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::language.language"
+    },
+    "pronouns": {
+      "type": "string"
+    },
+    "bio": {
+      "displayName": "bio",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.bio"
     }
   }
 }

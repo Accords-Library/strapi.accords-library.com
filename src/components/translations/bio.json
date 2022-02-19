@@ -1,21 +1,18 @@
 {
-  "collectionName": "components_translations_chronology_eras",
+  "collectionName": "components_translations_bios",
   "info": {
-    "displayName": "Chronology Era",
-    "icon": "volume-mute",
+    "displayName": "bio",
+    "icon": "smile",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "language": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::language.language"
     },
-    "description": {
+    "bio": {
       "type": "text"
     }
   }
