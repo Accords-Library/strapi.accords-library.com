@@ -9,7 +9,7 @@ cd strapi.accords-library.com
 npm install
 ```
 
-If you have access to the database and files, the database is located in `.tmp/data.db`, the media files are in `public/uploads`. Transfer those to the new instance before running Strapi.
+If you have access to the database and files, the database is located in `.tmp/data.db`, the encryption keys are localed in `.env`, and the media files are in `public/uploads`. Transfer those to the new instance before running Strapi.
 
 To run strapi:
 ```bash
