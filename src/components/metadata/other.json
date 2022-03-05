@@ -6,11 +6,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "subtype": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::other-subtype.other-subtype"
-    }
-  }
+  "attributes": {}
 }

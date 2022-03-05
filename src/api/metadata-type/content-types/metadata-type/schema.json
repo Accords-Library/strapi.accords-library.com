@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "other_subtypes",
+  "collectionName": "metadata_types",
   "info": {
-    "singularName": "other-subtype",
-    "pluralName": "other-subtypes",
-    "displayName": "Other Subtypes",
-    "description": ""
+    "singularName": "metadata-type",
+    "pluralName": "metadata-types",
+    "displayName": "Metadata Types"
   },
   "options": {
     "draftAndPublish": false
@@ -13,9 +12,9 @@
   "attributes": {
     "slug": {
       "type": "string",
-      "required": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
       "unique": true,
-      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "required": true
     },
     "titles": {
       "type": "component",

@@ -65,11 +65,12 @@
       "pluginOptions": {},
       "type": "dynamiczone",
       "components": [
-        "metadata.books",
-        "metadata.video",
-        "metadata.game",
         "metadata.audio",
-        "metadata.other"
+        "metadata.books",
+        "metadata.game",
+        "metadata.group",
+        "metadata.other",
+        "metadata.video"
       ],
       "max": 1
     },

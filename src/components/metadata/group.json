@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_metadata_groups",
+  "info": {
+    "displayName": "Group",
+    "icon": "box",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtype": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group-subtype.group-subtype"
+    },
+    "subitems_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::metadata-type.metadata-type"
+    }
+  }
+}
