@@ -246,6 +246,9 @@
     },
     "group_by": {
       "type": "string"
+    },
+    "select_option_sidebar": {
+      "type": "string"
     }
   }
 }
