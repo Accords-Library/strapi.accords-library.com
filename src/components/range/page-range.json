@@ -2,17 +2,20 @@
   "collectionName": "components_range_page_ranges",
   "info": {
     "displayName": "Page Range",
-    "icon": "book-medical"
+    "icon": "book-medical",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "starting_page": {
       "type": "integer",
-      "min": 1
+      "min": 1,
+      "required": true
     },
     "ending_page": {
       "type": "integer",
-      "min": 1
+      "min": 1,
+      "required": true
     }
   }
 }

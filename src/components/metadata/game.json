@@ -7,9 +7,9 @@
   },
   "options": {},
   "attributes": {
-    "platform": {
+    "platforms": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::game-platform.game-platform"
     },
     "demo": {

@@ -11,192 +11,201 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "language": {
+    "library": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "string"
+    },
+    "wiki": {
+      "type": "string"
+    },
+    "chronicles": {
+      "type": "string"
+    },
+    "library_short_description": {
+      "type": "string"
+    },
+    "contents_short_description": {
+      "type": "string"
+    },
+    "wiki_short_description": {
+      "type": "string"
+    },
+    "chronicles_short_description": {
+      "type": "string"
+    },
+    "news": {
+      "type": "string"
+    },
+    "merch": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "string"
+    },
+    "archives": {
+      "type": "string"
+    },
+    "about_us": {
+      "type": "string"
+    },
+    "licensing_notice": {
+      "type": "text"
+    },
+    "copyright_notice": {
+      "type": "text"
+    },
+    "contents_description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "string"
+    },
+    "release_year": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "thickness": {
+      "type": "string"
+    },
+    "subitem": {
+      "type": "string"
+    },
+    "subitems": {
+      "type": "string"
+    },
+    "subitem_of": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "variants": {
+      "type": "string"
+    },
+    "variant_of": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "audio": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "textual": {
+      "type": "string"
+    },
+    "game": {
+      "type": "string"
+    },
+    "other": {
+      "type": "string"
+    },
+    "return_to": {
+      "type": "string"
+    },
+    "left_to_right": {
+      "type": "string"
+    },
+    "right_to_left": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "string"
+    },
+    "page_order": {
+      "type": "string"
+    },
+    "binding": {
+      "type": "string"
+    },
+    "type_information": {
+      "type": "string"
+    },
+    "front_matter": {
+      "type": "string"
+    },
+    "back_matter": {
+      "type": "string"
+    },
+    "open_content": {
+      "type": "string"
+    },
+    "read_content": {
+      "type": "string"
+    },
+    "watch_content": {
+      "type": "string"
+    },
+    "listen_content": {
+      "type": "string"
+    },
+    "view_scans": {
+      "type": "string"
+    },
+    "paperback": {
+      "type": "string"
+    },
+    "hardcover": {
+      "type": "string"
+    },
+    "ui_language": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::language.language"
     },
-    "main_library": {
+    "languages": {
       "type": "string"
     },
-    "main_library_description": {
+    "select_language": {
       "type": "string"
     },
-    "main_news": {
+    "language": {
       "type": "string"
-    },
-    "main_merch": {
-      "type": "string"
-    },
-    "main_gallery": {
-      "type": "string"
-    },
-    "main_archives": {
-      "type": "string"
-    },
-    "main_about_us": {
-      "type": "string"
-    },
-    "main_licensing": {
-      "type": "text"
-    },
-    "main_copyright": {
-      "type": "text"
     },
     "library_description": {
       "type": "text"
     },
-    "library_item_summary": {
-      "type": "string"
-    },
-    "library_item_gallery": {
-      "type": "string"
-    },
-    "library_item_details": {
-      "type": "string"
-    },
-    "library_item_subitems": {
-      "type": "string"
-    },
-    "library_item_variants": {
-      "type": "string"
-    },
-    "library_item_content": {
-      "type": "string"
-    },
-    "global_return_label": {
-      "type": "string"
-    },
-    "global_subitem_of": {
-      "type": "string"
-    },
-    "global_type": {
-      "type": "string"
-    },
-    "global_width": {
-      "type": "string"
-    },
-    "global_height": {
-      "type": "string"
-    },
-    "global_thickness": {
-      "type": "string"
-    },
-    "global_binding": {
-      "type": "string"
-    },
-    "global_language": {
-      "type": "string"
-    },
-    "global_languages": {
-      "type": "string"
-    },
-    "global_page": {
-      "type": "string"
-    },
-    "global_pages": {
-      "type": "string"
-    },
-    "global_page_order": {
-      "type": "string"
-    },
-    "global_release_date": {
-      "type": "string"
-    },
-    "global_price": {
-      "type": "string"
-    },
-    "library_item_physical_size": {
-      "type": "string"
-    },
-    "library_item_type_information": {
-      "type": "string"
-    },
-    "library_item_front_matter": {
-      "type": "string"
-    },
-    "library_item_back_matter": {
-      "type": "string"
-    },
-    "library_item_type_textual": {
-      "type": "string"
-    },
-    "library_item_type_audio": {
-      "type": "string"
-    },
-    "library_item_type_game": {
-      "type": "string"
-    },
-    "library_item_type_video": {
-      "type": "string"
-    },
-    "library_item_type_other": {
-      "type": "string"
-    },
-    "library_item_open_content": {
-      "type": "string"
-    },
-    "library_item_view_scans": {
-      "type": "string"
-    },
-    "content_read_content": {
-      "type": "string"
-    },
-    "content_watch_content": {
-      "type": "string"
-    },
-    "content_listen_content": {
-      "type": "string"
-    },
-    "global_category": {
-      "type": "string"
-    },
-    "global_categories": {
-      "type": "string"
-    },
-    "global_paperback": {
-      "type": "string"
-    },
-    "global_hardcover": {
-      "type": "string"
-    },
-    "global_left_to_right": {
-      "type": "string"
-    },
-    "global_right_to_left": {
-      "type": "string"
-    },
-    "main_wiki": {
-      "type": "string"
-    },
-    "main_wiki_description": {
-      "type": "string"
-    },
-    "main_chronicles": {
-      "type": "string"
-    },
-    "main_chronicles_description": {
-      "type": "string"
-    },
-    "library_items": {
-      "type": "string"
-    },
-    "library_items_description": {
-      "type": "string"
-    },
-    "library_content": {
-      "type": "string"
-    },
-    "library_content_description": {
-      "type": "string"
-    },
     "wiki_description": {
+      "type": "text"
+    },
+    "chronicles_description": {
       "type": "text"
     },
     "news_description": {
       "type": "text"
     },
-    "chronicles_description": {
+    "merch_description": {
       "type": "text"
     },
     "gallery_description": {
@@ -208,8 +217,35 @@
     "about_us_description": {
       "type": "text"
     },
-    "merch_description": {
+    "page_not_found": {
+      "type": "string"
+    },
+    "default_description": {
       "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "show_subitems": {
+      "type": "string"
+    },
+    "show_primary_items": {
+      "type": "string"
+    },
+    "show_secondary_items": {
+      "type": "string"
+    },
+    "no_type": {
+      "type": "string"
+    },
+    "no_year": {
+      "type": "string"
+    },
+    "order_by": {
+      "type": "string"
+    },
+    "group_by": {
+      "type": "string"
     }
   }
 }

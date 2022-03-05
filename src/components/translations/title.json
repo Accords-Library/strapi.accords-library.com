@@ -1,7 +1,7 @@
 {
   "collectionName": "components_translations_titles",
   "info": {
-    "displayName": "tri title",
+    "displayName": "Contents",
     "icon": "feather",
     "description": ""
   },
@@ -21,6 +21,9 @@
     },
     "pre_title": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
