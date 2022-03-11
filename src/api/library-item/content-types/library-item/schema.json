@@ -127,6 +127,11 @@
       "relation": "manyToMany",
       "target": "api::merch-item.merch-item",
       "mappedBy": "library_items"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
     }
   }
 }
