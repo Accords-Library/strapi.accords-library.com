@@ -252,6 +252,102 @@
     },
     "group": {
       "type": "string"
+    },
+    "settings": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "string"
+    },
+    "light": {
+      "type": "string"
+    },
+    "auto": {
+      "type": "string"
+    },
+    "dark": {
+      "type": "string"
+    },
+    "font_size": {
+      "type": "string"
+    },
+    "player_name": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "font": {
+      "type": "string"
+    },
+    "calculated": {
+      "type": "string"
+    },
+    "status_incomplete": {
+      "type": "text"
+    },
+    "status_draft": {
+      "type": "text"
+    },
+    "status_review": {
+      "type": "text"
+    },
+    "status_done": {
+      "type": "text"
+    },
+    "incomplete": {
+      "type": "string"
+    },
+    "draft": {
+      "type": "string"
+    },
+    "review": {
+      "type": "string"
+    },
+    "done": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "transcribers": {
+      "type": "string"
+    },
+    "translators": {
+      "type": "string"
+    },
+    "proofreaders": {
+      "type": "string"
+    },
+    "transcript_notice": {
+      "type": "string"
+    },
+    "translation_notice": {
+      "type": "string"
+    },
+    "source_language": {
+      "type": "string"
+    },
+    "pronouns": {
+      "type": "string"
+    },
+    "no_category": {
+      "type": "string"
+    },
+    "item": {
+      "type": "string"
+    },
+    "items": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "result": {
+      "type": "string"
+    },
+    "results": {
+      "type": "string"
     }
   }
 }
