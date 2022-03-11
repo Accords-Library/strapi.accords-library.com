@@ -25,6 +25,15 @@
       "minLength": 3,
       "maxLength": 3,
       "required": true
+    },
+    "rate_to_usd": {
+      "type": "decimal",
+      "required": true
+    },
+    "display_decimals": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
