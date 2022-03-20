@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_translations_web_archives",
+  "info": {
+    "displayName": "Web Archives",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "description": {
+      "type": "text"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

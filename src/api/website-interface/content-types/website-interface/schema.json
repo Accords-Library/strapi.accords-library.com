@@ -348,6 +348,36 @@
     },
     "results": {
       "type": "string"
+    },
+    "language_switch_message": {
+      "type": "text"
+    },
+    "open_settings": {
+      "type": "string"
+    },
+    "change_language": {
+      "type": "string"
+    },
+    "open_search": {
+      "type": "string"
+    },
+    "chronology": {
+      "type": "string"
+    },
+    "accords_handbook": {
+      "type": "string"
+    },
+    "legality": {
+      "type": "string"
+    },
+    "members": {
+      "type": "string"
+    },
+    "sharing_policy": {
+      "type": "string"
+    },
+    "contact_us": {
+      "type": "string"
     }
   }
 }

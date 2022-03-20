@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_basics_file_sizes",
+  "info": {
+    "displayName": "File Size",
+    "icon": "balance-scale",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "decimal",
+      "required": true
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "kb",
+        "mb",
+        "gb"
+      ],
+      "required": true,
+      "default": "kb"
+    }
+  }
+}

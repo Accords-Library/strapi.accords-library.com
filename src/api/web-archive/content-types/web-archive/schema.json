@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_archives",
+  "info": {
+    "singularName": "web-archive",
+    "pluralName": "web-archives",
+    "displayName": "🟧 Web Archives",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "website",
+        "webpage",
+        "online_doc"
+      ],
+      "required": true
+    },
+    "source_url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "format": {
+      "type": "enumeration",
+      "enum": [
+        "zip",
+        "wacz"
+      ],
+      "required": true
+    },
+    "date": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.datepicker",
+      "required": true
+    },
+    "num_pages": {
+      "type": "integer"
+    },
+    "author": {
+      "type": "string"
+    },
+    "still_online": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "size": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.file-size",
+      "required": true
+    },
+    "descriptions": {
+      "displayName": "Web Archives",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.web-archives"
+    }
+  }
+}

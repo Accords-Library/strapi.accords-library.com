@@ -2,39 +2,59 @@
   "collectionName": "components_collections_component_library_obi_belts",
   "info": {
     "displayName": "Library Obi Belt",
-    "icon": "circle-notch"
+    "icon": "circle-notch",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "front": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "spine": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "back": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "full": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "inside_full": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "flap_front": {
       "allowedTypes": [
         "images"
       ],
       "type": "media",
       "multiple": false
     },
-    "inside_full": {
+    "flap_back": {
       "allowedTypes": [
         "images"
       ],
