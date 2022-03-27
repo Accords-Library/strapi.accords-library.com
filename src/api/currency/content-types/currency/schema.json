@@ -15,7 +15,6 @@
     "symbol": {
       "type": "string",
       "required": true,
-      "maxLength": 1,
       "minLength": 1,
       "unique": false
     },

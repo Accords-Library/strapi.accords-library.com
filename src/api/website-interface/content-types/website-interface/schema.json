@@ -378,6 +378,27 @@
     },
     "contact_us": {
       "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "email_gdpr_notice": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "send": {
+      "type": "string"
+    },
+    "response_invalid_code": {
+      "type": "string"
+    },
+    "response_invalid_email": {
+      "type": "string"
+    },
+    "response_email_success": {
+      "type": "string"
     }
   }
 }
