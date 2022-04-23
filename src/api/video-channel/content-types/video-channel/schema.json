@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_channels",
+  "info": {
+    "singularName": "video-channel",
+    "pluralName": "video-channels",
+    "displayName": "🟦 Video Channels",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video",
+      "mappedBy": "channel"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subscribers": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

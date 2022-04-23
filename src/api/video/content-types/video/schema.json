@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "🟦 Videos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-zA-Z0-9-_]+$"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "published_date": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.datepicker",
+      "required": true
+    },
+    "channel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::video-channel.video-channel",
+      "inversedBy": "videos"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "views": {
+      "type": "integer",
+      "required": true
+    },
+    "likes": {
+      "type": "integer",
+      "required": true
+    },
+    "width": {
+      "type": "integer",
+      "required": true
+    },
+    "height": {
+      "type": "integer",
+      "required": true
+    },
+    "duration": {
+      "type": "integer",
+      "required": true
+    },
+    "audio_languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "sub_languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "YouTube",
+        "NicoNico"
+      ]
+    },
+    "live_chat": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "gone": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

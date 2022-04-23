@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_basics_urls",
+  "info": {
+    "displayName": "Url",
+    "icon": "shopping-cart"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

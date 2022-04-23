@@ -23,6 +23,42 @@
       "type": "component",
       "repeatable": false,
       "component": "collections-component.library-obi-belt"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "source_language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Incomplete",
+        "Draft",
+        "Review",
+        "Done"
+      ],
+      "default": "Incomplete",
+      "required": true
+    },
+    "scanners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "cleaners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "typesetters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
     }
   }
 }

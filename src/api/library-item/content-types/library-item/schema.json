@@ -107,11 +107,6 @@
       "target": "api::ranged-content.ranged-content",
       "mappedBy": "library_item"
     },
-    "images": {
-      "type": "component",
-      "repeatable": false,
-      "component": "collections-component.library-images"
-    },
     "digital": {
       "type": "boolean",
       "default": false,
@@ -132,6 +127,17 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category"
+    },
+    "urls": {
+      "displayName": "Url",
+      "type": "component",
+      "repeatable": true,
+      "component": "basics.url"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collections-component.library-images"
     }
   }
 }
