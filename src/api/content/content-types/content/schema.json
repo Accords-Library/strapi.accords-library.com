@@ -65,6 +65,18 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "next_recommended": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::content.content",
+      "inversedBy": "previous_recommended"
+    },
+    "previous_recommended": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::content.content",
+      "inversedBy": "next_recommended"
     }
   }
 }
