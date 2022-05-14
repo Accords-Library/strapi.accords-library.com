@@ -28,23 +28,11 @@
       "relation": "oneToOne",
       "target": "api::content-type.content-type"
     },
-    "titles": {
-      "displayName": "title",
-      "type": "component",
-      "repeatable": true,
-      "component": "translations.title"
-    },
     "ranged_contents": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::ranged-content.ranged-content",
       "mappedBy": "content"
-    },
-    "text_set": {
-      "displayName": "text_set",
-      "type": "component",
-      "repeatable": true,
-      "component": "sets.text-set"
     },
     "thumbnail": {
       "type": "media",

@@ -2,15 +2,11 @@
   "collectionName": "components_sets_audio_sets",
   "info": {
     "displayName": "audio_set",
-    "icon": "headphones"
+    "icon": "headphones",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "language": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::language.language"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
@@ -22,11 +18,12 @@
       "default": "Incomplete"
     },
     "audiofile": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "source_language": {
       "type": "relation",
