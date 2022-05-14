@@ -10,9 +10,9 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "4.1.8",
-    "@strapi/strapi": "4.1.8",
-    "sqlite3": "5.0.5"
+    "@strapi/plugin-graphql": "4.1.9",
+    "@strapi/strapi": "4.1.9",
+    "sqlite3": "5.0.6"
   },
   "author": {
     "name": "A Strapi developer"
