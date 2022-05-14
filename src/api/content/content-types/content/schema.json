@@ -46,18 +46,6 @@
       "repeatable": true,
       "component": "sets.text-set"
     },
-    "video_set": {
-      "displayName": "Video Set",
-      "type": "component",
-      "repeatable": true,
-      "component": "sets.video-set"
-    },
-    "audio_set": {
-      "displayName": "audio_set",
-      "type": "component",
-      "repeatable": true,
-      "component": "sets.audio-set"
-    },
     "thumbnail": {
       "type": "media",
       "multiple": false,
@@ -77,6 +65,11 @@
       "relation": "oneToOne",
       "target": "api::content.content",
       "inversedBy": "next_recommended"
+    },
+    "translations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.title"
     }
   }
 }

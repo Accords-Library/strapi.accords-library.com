@@ -24,6 +24,21 @@
     },
     "description": {
       "type": "text"
+    },
+    "text_set": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sets.text-set"
+    },
+    "video_set": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sets.video-set"
+    },
+    "audio_set": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sets.audio-set"
     }
   }
 }
