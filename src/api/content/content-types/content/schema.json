@@ -42,22 +42,16 @@
         "images"
       ]
     },
-    "next_recommended": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::content.content",
-      "inversedBy": "previous_recommended"
-    },
-    "previous_recommended": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::content.content",
-      "inversedBy": "next_recommended"
-    },
     "translations": {
       "type": "component",
       "repeatable": true,
       "component": "translations.title"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contents-group.contents-group",
+      "inversedBy": "contents"
     }
   }
 }

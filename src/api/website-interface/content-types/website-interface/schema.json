@@ -399,6 +399,48 @@
     },
     "response_email_success": {
       "type": "string"
+    },
+    "always_show_info": {
+      "type": "string"
+    },
+    "item_not_available": {
+      "type": "string"
+    },
+    "primary_language": {
+      "type": "string"
+    },
+    "secondary_language": {
+      "type": "string"
+    },
+    "combine_related_contents": {
+      "type": "string"
+    },
+    "previous_content": {
+      "type": "string"
+    },
+    "followup_content": {
+      "type": "string"
+    },
+    "videos": {
+      "type": "string"
+    },
+    "view_on": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string"
+    },
+    "subscribers": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "available_at": {
+      "type": "string"
+    },
+    "search_title": {
+      "type": "string"
     }
   }
 }
