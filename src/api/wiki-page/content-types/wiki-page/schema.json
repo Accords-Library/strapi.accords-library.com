@@ -25,16 +25,24 @@
         "images"
       ]
     },
-    "wiki_set": {
-      "displayName": "wiki_set",
+    "Aspects": {
+      "type": "dynamiczone",
+      "components": [
+        "wiki-specialization.chronology",
+        "wiki-specialization.glossary-item",
+        "wiki-specialization.weapon"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "translations": {
+      "displayName": "Wiki",
       "type": "component",
       "repeatable": true,
-      "component": "sets.wiki-set"
-    },
-    "type": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::wiki-page-type.wiki-page-type"
+      "component": "translations.wiki"
     }
   }
 }

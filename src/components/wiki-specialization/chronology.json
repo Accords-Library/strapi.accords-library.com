@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_wiki_specialization_chronologies",
+  "info": {
+    "displayName": "Chronology Event",
+    "icon": "history",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "translations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.chronology-item"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
+    },
+    "date": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.datepicker",
+      "required": true
+    },
+    "displayed_date": {
+      "type": "string"
+    }
+  }
+}

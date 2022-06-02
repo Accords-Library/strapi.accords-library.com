@@ -6,12 +6,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "tabs": {
-      "displayName": "tab",
-      "type": "component",
-      "repeatable": true,
-      "component": "page-builder-component.tab"
-    }
-  }
+  "attributes": {}
 }

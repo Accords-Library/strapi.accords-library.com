@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_collections_component_aliases",
+  "info": {
+    "displayName": "Aliases",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alias": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

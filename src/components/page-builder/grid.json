@@ -13,11 +13,6 @@
       "max": 10,
       "required": true,
       "default": 1
-    },
-    "panes": {
-      "type": "component",
-      "repeatable": true,
-      "component": "page-builder-component.pane"
     }
   }
 }

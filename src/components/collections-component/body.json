@@ -1,32 +1,13 @@
 {
-  "collectionName": "components_translations_posts",
+  "collectionName": "components_collections_component_bodies",
   "info": {
-    "displayName": "Posts",
-    "icon": "icons",
+    "displayName": "body",
+    "icon": "align-left",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "excerpt": {
-      "type": "text",
-      "maxLength": 150
-    },
-    "thumbnail": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "body": {
-      "type": "richtext"
-    },
-    "language": {
+    "source_language": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::language.language"
@@ -42,6 +23,14 @@
       "default": "Incomplete",
       "required": true
     },
+    "body": {
+      "type": "richtext"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
     "translators": {
       "type": "relation",
       "relation": "oneToMany",
@@ -51,11 +40,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::recorder.recorder"
-    },
-    "source_language": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::language.language"
     }
   }
 }

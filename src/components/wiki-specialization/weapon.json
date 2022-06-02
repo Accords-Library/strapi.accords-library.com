@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_wiki_specialization_weapons",
+  "info": {
+    "displayName": "Weapon Story",
+    "icon": "tools",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "translations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.weapon-story-story"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
+    }
+  }
+}

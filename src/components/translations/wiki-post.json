@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_translations_chronology_items",
+  "collectionName": "components_translations_wiki_posts",
   "info": {
-    "displayName": "Chronology Item",
-    "icon": "clock",
-    "description": ""
+    "displayName": "wiki-post",
+    "icon": "outdent"
   },
   "options": {},
   "attributes": {
@@ -12,11 +11,10 @@
       "relation": "oneToOne",
       "target": "api::language.language"
     },
-    "title": {
-      "type": "string"
-    },
-    "note": {
-      "type": "text"
+    "source_language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
     },
     "status": {
       "type": "enumeration",
@@ -26,10 +24,13 @@
         "Review",
         "Done"
       ],
-      "default": "Done",
+      "default": "Incomplete",
       "required": true
     },
-    "description": {
+    "summary": {
+      "type": "text"
+    },
+    "body": {
       "type": "richtext"
     }
   }

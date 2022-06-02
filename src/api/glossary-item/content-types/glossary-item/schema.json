@@ -34,14 +34,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::glossary-item-type.glossary-item-type"
-    },
-    "thumbnail": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
     }
   }
 }

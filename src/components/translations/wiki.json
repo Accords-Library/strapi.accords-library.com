@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_translations_wikis",
+  "info": {
+    "displayName": "Wiki",
+    "icon": "swatchbook",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "aliases": {
+      "displayName": "Aliases",
+      "type": "component",
+      "repeatable": true,
+      "component": "collections-component.aliases"
+    },
+    "body": {
+      "displayName": "body",
+      "type": "component",
+      "repeatable": false,
+      "component": "collections-component.body"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

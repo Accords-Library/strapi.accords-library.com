@@ -40,11 +40,6 @@
       "relation": "oneToOne",
       "target": "api::language.language"
     },
-    "authors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::recorder.recorder"
-    },
     "translators": {
       "type": "relation",
       "relation": "oneToMany",

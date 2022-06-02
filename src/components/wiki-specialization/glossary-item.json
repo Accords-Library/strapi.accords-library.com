@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_wiki_specialization_glossary_items",
+  "info": {
+    "displayName": "Glossary Definition",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "translations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.glossary-definition"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
+    }
+  }
+}

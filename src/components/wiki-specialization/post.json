@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_wiki_specialization_posts",
+  "info": {
+    "displayName": "Post",
+    "icon": "book-reader",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "translations": {
+      "displayName": "wiki-post",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.wiki-post"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    }
+  }
+}
