@@ -441,6 +441,30 @@
     },
     "search_title": {
       "type": "string"
+    },
+    "want_it": {
+      "type": "string"
+    },
+    "have_it": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "reset_all_filters": {
+      "type": "string"
+    },
+    "only_display_items_i_have": {
+      "type": "string"
+    },
+    "only_display_items_i_want": {
+      "type": "string"
+    },
+    "only_display_unmarked_items": {
+      "type": "string"
+    },
+    "display_all_items": {
+      "type": "string"
     }
   }
 }

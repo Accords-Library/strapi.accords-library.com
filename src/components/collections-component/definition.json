@@ -1,16 +1,21 @@
 {
-  "collectionName": "components_translations_glossary_definitions",
+  "collectionName": "components_collections_component_definitions",
   "info": {
-    "displayName": "Glossary Definition",
-    "icon": "atlas",
-    "description": ""
+    "displayName": "Definition",
+    "icon": "atlas"
   },
   "options": {},
   "attributes": {
-    "definition": {
-      "type": "text"
+    "source": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::source.source"
     },
-    "language": {
+    "definition": {
+      "type": "richtext",
+      "required": true
+    },
+    "source_language": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::language.language"
@@ -25,11 +30,6 @@
       ],
       "default": "Incomplete",
       "required": true
-    },
-    "source_language": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::language.language"
     }
   }
 }

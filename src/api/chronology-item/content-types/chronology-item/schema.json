@@ -40,6 +40,12 @@
       "type": "component",
       "repeatable": true,
       "component": "collections-component.event"
+    },
+    "wiki_pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::wiki-page.wiki-page",
+      "mappedBy": "chronology_items"
     }
   }
 }
