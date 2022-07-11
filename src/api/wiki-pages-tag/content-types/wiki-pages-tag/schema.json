@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wiki_pages_tags",
+  "info": {
+    "singularName": "wiki-pages-tag",
+    "pluralName": "wiki-pages-tags",
+    "displayName": "🟥 Wiki Pages Tags",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "required": true,
+      "unique": true
+    },
+    "titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.simple-title"
+    }
+  }
+}

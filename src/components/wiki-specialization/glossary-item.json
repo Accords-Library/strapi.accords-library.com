@@ -16,6 +16,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::source.source"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
     }
   }
 }

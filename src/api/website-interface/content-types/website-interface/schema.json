@@ -465,6 +465,21 @@
     },
     "display_all_items": {
       "type": "string"
+    },
+    "table_of_contents": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "string"
+    },
+    "no_results_message": {
+      "type": "string"
+    },
+    "all": {
+      "type": "string"
+    },
+    "special_pages": {
+      "type": "string"
     }
   }
 }

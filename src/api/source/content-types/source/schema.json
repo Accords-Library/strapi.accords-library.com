@@ -21,6 +21,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::content.content"
+    },
+    "ranged_content": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ranged-content.ranged-content"
     }
   }
 }
