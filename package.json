@@ -10,8 +10,8 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "4.2.0",
-    "@strapi/strapi": "4.2.0",
+    "@strapi/plugin-graphql": "4.2.2",
+    "@strapi/strapi": "4.2.2",
     "sqlite3": "5.0.8",
     "strapi-plugin-meilisearch": "0.6.6"
   },
