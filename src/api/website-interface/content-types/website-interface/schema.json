@@ -480,6 +480,33 @@
     },
     "special_pages": {
       "type": "string"
+    },
+    "scan": {
+      "type": "string"
+    },
+    "scanlation": {
+      "type": "string"
+    },
+    "scanners": {
+      "type": "string"
+    },
+    "cleaners": {
+      "type": "string"
+    },
+    "typesetters": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "no_source_warning": {
+      "type": "string"
     }
   }
 }

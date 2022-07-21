@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_translations_chronicles",
+  "info": {
+    "displayName": "chronicles",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "body": {
+      "type": "component",
+      "repeatable": false,
+      "component": "collections-component.body"
+    }
+  }
+}

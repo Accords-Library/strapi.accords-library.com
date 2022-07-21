@@ -52,6 +52,12 @@
       "relation": "manyToOne",
       "target": "api::contents-group.contents-group",
       "inversedBy": "contents"
+    },
+    "chronicles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::chronicle.chronicle",
+      "mappedBy": "contents"
     }
   }
 }

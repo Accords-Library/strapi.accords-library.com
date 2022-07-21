@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chronicles",
+  "info": {
+    "singularName": "chronicle",
+    "pluralName": "chronicles",
+    "displayName": "🟪 Chronicles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "translations": {
+      "displayName": "chronicles",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.chronicles"
+    },
+    "date_start": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.datepicker",
+      "required": true
+    },
+    "chapter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::chronicles-chapter.chronicles-chapter",
+      "inversedBy": "chronicles"
+    },
+    "date_end": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basics.datepicker",
+      "required": true
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::content.content",
+      "inversedBy": "chronicles"
+    }
+  }
+}
