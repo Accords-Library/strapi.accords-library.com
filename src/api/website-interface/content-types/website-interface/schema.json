@@ -507,6 +507,12 @@
     },
     "no_source_warning": {
       "type": "string"
+    },
+    "copy_anchor_link": {
+      "type": "string"
+    },
+    "anchor_link_copied": {
+      "type": "string"
     }
   }
 }
