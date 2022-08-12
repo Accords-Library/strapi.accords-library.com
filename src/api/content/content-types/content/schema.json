@@ -47,16 +47,16 @@
       "repeatable": true,
       "component": "translations.title"
     },
-    "group": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::contents-group.contents-group",
-      "inversedBy": "contents"
-    },
     "chronicles": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::chronicle.chronicle",
+      "mappedBy": "contents"
+    },
+    "folders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::contents-folder.contents-folder",
       "mappedBy": "contents"
     }
   }

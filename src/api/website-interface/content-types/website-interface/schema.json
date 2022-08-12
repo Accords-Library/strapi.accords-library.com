@@ -513,6 +513,12 @@
     },
     "anchor_link_copied": {
       "type": "string"
+    },
+    "folders": {
+      "type": "string"
+    },
+    "empty_folder_message": {
+      "type": "string"
     }
   }
 }

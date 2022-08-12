@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents_folders",
+  "info": {
+    "singularName": "contents-folder",
+    "pluralName": "contents-folders",
+    "displayName": "🟡 Contents Folders",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "unique": true,
+      "required": true
+    },
+    "titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.simple-title",
+      "required": true,
+      "min": 1
+    },
+    "subfolders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contents-folder.contents-folder",
+      "mappedBy": "parent_folder"
+    },
+    "parent_folder": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contents-folder.contents-folder",
+      "inversedBy": "subfolders"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::content.content",
+      "inversedBy": "folders"
+    },
+    "sequence": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
