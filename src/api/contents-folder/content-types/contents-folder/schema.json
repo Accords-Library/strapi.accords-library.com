@@ -38,9 +38,9 @@
     },
     "contents": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::content.content",
-      "inversedBy": "folders"
+      "mappedBy": "folder"
     },
     "sequence": {
       "type": "boolean",

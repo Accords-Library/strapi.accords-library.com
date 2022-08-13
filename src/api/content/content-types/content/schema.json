@@ -53,11 +53,11 @@
       "target": "api::chronicle.chronicle",
       "mappedBy": "contents"
     },
-    "folders": {
+    "folder": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::contents-folder.contents-folder",
-      "mappedBy": "contents"
+      "inversedBy": "contents"
     }
   }
 }
