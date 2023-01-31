@@ -38,9 +38,6 @@
     "news": {
       "type": "string"
     },
-    "merch": {
-      "type": "string"
-    },
     "gallery": {
       "type": "string"
     },
@@ -63,9 +60,6 @@
       "type": "string"
     },
     "category": {
-      "type": "string"
-    },
-    "categories": {
       "type": "string"
     },
     "size": {
@@ -95,19 +89,7 @@
     "subitem": {
       "type": "string"
     },
-    "subitems": {
-      "type": "string"
-    },
-    "subitem_of": {
-      "type": "string"
-    },
     "variant": {
-      "type": "string"
-    },
-    "variants": {
-      "type": "string"
-    },
-    "variant_of": {
       "type": "string"
     },
     "summary": {
@@ -128,9 +110,6 @@
     "other": {
       "type": "string"
     },
-    "return_to": {
-      "type": "string"
-    },
     "left_to_right": {
       "type": "string"
     },
@@ -138,9 +117,6 @@
       "type": "string"
     },
     "page": {
-      "type": "string"
-    },
-    "pages": {
       "type": "string"
     },
     "page_order": {
@@ -184,9 +160,6 @@
       "relation": "oneToOne",
       "target": "api::language.language"
     },
-    "languages": {
-      "type": "string"
-    },
     "select_language": {
       "type": "string"
     },
@@ -203,12 +176,6 @@
       "type": "text"
     },
     "news_description": {
-      "type": "text"
-    },
-    "merch_description": {
-      "type": "text"
-    },
-    "gallery_description": {
       "type": "text"
     },
     "archives_description": {
@@ -233,12 +200,6 @@
       "type": "string"
     },
     "show_secondary_items": {
-      "type": "string"
-    },
-    "no_type": {
-      "type": "string"
-    },
-    "no_year": {
       "type": "string"
     },
     "order_by": {
@@ -331,26 +292,11 @@
     "pronouns": {
       "type": "string"
     },
-    "no_category": {
-      "type": "string"
-    },
     "item": {
-      "type": "string"
-    },
-    "items": {
       "type": "string"
     },
     "content": {
       "type": "string"
-    },
-    "result": {
-      "type": "string"
-    },
-    "results": {
-      "type": "string"
-    },
-    "language_switch_message": {
-      "type": "text"
     },
     "open_settings": {
       "type": "string"
@@ -368,9 +314,6 @@
       "type": "string"
     },
     "legality": {
-      "type": "string"
-    },
-    "members": {
       "type": "string"
     },
     "sharing_policy": {
@@ -469,9 +412,6 @@
     "table_of_contents": {
       "type": "string"
     },
-    "definition": {
-      "type": "string"
-    },
     "no_results_message": {
       "type": "string"
     },
@@ -518,6 +458,90 @@
       "type": "string"
     },
     "empty_folder_message": {
+      "type": "string"
+    },
+    "switch_to_grid_view": {
+      "type": "string"
+    },
+    "switch_to_folder_view": {
+      "type": "string"
+    },
+    "content_is_not_available": {
+      "type": "string"
+    },
+    "paper_texture": {
+      "type": "string"
+    },
+    "book_fold": {
+      "type": "string"
+    },
+    "lighting": {
+      "type": "string"
+    },
+    "side_pages": {
+      "type": "string"
+    },
+    "shadow": {
+      "type": "string"
+    },
+    "night_reader": {
+      "type": "string"
+    },
+    "single_page_view": {
+      "type": "string"
+    },
+    "double_page_view": {
+      "type": "string"
+    },
+    "reset_all_options": {
+      "type": "string"
+    },
+    "reading_layout": {
+      "type": "string"
+    },
+    "quality": {
+      "type": "string"
+    },
+    "only_unavailable_videos": {
+      "type": "string"
+    },
+    "oldest": {
+      "type": "string"
+    },
+    "newest": {
+      "type": "string"
+    },
+    "least_popular": {
+      "type": "string"
+    },
+    "most_popular": {
+      "type": "string"
+    },
+    "shortest": {
+      "type": "string"
+    },
+    "longest": {
+      "type": "string"
+    },
+    "search": {
+      "type": "string"
+    },
+    "showing_x_out_of_y_results": {
+      "type": "string"
+    },
+    "return_to_x": {
+      "type": "string"
+    },
+    "x_results": {
+      "type": "string"
+    },
+    "definition_x": {
+      "type": "string"
+    },
+    "subitem_of_x": {
+      "type": "string"
+    },
+    "variant_of_x": {
       "type": "string"
     }
   }
