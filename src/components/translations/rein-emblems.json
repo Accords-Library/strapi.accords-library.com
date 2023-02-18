@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_translations_rein_emblems",
+  "info": {
+    "displayName": "Rein Emblems",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

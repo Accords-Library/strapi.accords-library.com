@@ -19,7 +19,7 @@
     },
     "thumbnail": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
@@ -30,6 +30,19 @@
       "type": "component",
       "repeatable": true,
       "component": "translations.rein-costumes"
+    },
+    "sprite": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "emblem": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::rein-emblem.rein-emblem",
+      "inversedBy": "costumes"
     }
   }
 }
