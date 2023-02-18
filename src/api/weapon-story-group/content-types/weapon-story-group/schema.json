@@ -23,6 +23,18 @@
       "required": true,
       "unique": true,
       "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "subgroups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::weapon-story-group.weapon-story-group",
+      "mappedBy": "subgroup_of"
+    },
+    "subgroup_of": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::weapon-story-group.weapon-story-group",
+      "inversedBy": "subgroups"
     }
   }
 }

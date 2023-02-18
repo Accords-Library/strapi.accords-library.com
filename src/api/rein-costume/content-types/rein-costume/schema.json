@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rein_costumes",
+  "info": {
+    "singularName": "rein-costume",
+    "pluralName": "rein-costumes",
+    "displayName": "⬜ Re[in] Costumes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "translations": {
+      "displayName": "Rein Costumes",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.rein-costumes"
+    }
+  }
+}

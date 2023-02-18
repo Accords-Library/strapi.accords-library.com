@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_translations_rein_costumes",
+  "info": {
+    "displayName": "Rein Costumes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

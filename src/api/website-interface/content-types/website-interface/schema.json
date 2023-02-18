@@ -543,6 +543,21 @@
     },
     "variant_of_x": {
       "type": "string"
+    },
+    "dark_mode_extension_warning": {
+      "type": "text"
+    },
+    "weapon": {
+      "type": "string"
+    },
+    "weapons_description": {
+      "type": "string"
+    },
+    "story_x": {
+      "type": "string"
+    },
+    "level_x": {
+      "type": "string"
     }
   }
 }
