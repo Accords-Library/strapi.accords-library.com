@@ -41,7 +41,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::library-item.library-item",
-      "inversedBy": "subitem_of"
+      "mappedBy": "subitem_of"
     },
     "subitem_of": {
       "type": "relation",
