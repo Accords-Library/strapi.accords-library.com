@@ -30,6 +30,21 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::language.language"
+    },
+    "transcribers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "translators": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
+    },
+    "proofreaders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recorder.recorder"
     }
   }
 }

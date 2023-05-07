@@ -58,6 +58,18 @@
       "relation": "manyToOne",
       "target": "api::contents-folder.contents-folder",
       "inversedBy": "contents"
+    },
+    "next_contents": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::content.content",
+      "inversedBy": "previous_contents"
+    },
+    "previous_contents": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::content.content",
+      "inversedBy": "next_contents"
     }
   }
 }

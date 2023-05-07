@@ -558,6 +558,9 @@
     },
     "level_x": {
       "type": "string"
+    },
+    "player_name_tooltip": {
+      "type": "text"
     }
   }
 }

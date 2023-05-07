@@ -41,11 +41,6 @@
       "relation": "oneToMany",
       "target": "api::content.content",
       "mappedBy": "folder"
-    },
-    "sequence": {
-      "type": "boolean",
-      "default": false,
-      "required": true
     }
   }
 }
