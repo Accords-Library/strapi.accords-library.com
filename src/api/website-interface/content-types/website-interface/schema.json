@@ -561,6 +561,36 @@
     },
     "player_name_tooltip": {
       "type": "text"
+    },
+    "download_scans": {
+      "type": "string"
+    },
+    "search_placeholder": {
+      "type": "string"
+    },
+    "performance_mode": {
+      "type": "string"
+    },
+    "performance_mode_tooltip": {
+      "type": "text"
+    },
+    "transcriber": {
+      "type": "string"
+    },
+    "translator": {
+      "type": "string"
+    },
+    "proofreader": {
+      "type": "string"
+    },
+    "dubber": {
+      "type": "string"
+    },
+    "subber": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
     }
   }
 }

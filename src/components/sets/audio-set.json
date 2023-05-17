@@ -17,14 +17,6 @@
       ],
       "default": "Incomplete"
     },
-    "audiofile": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "files"
-      ]
-    },
     "source_language": {
       "type": "relation",
       "relation": "oneToOne",
@@ -32,7 +24,7 @@
     },
     "dubbers": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::recorder.recorder"
     },
     "notes": {

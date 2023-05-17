@@ -138,6 +138,11 @@
       "type": "component",
       "repeatable": true,
       "component": "collections-component.library-images"
+    },
+    "download_available": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
