@@ -11,6 +11,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::audio-subtype.audio-subtype"
+    },
+    "tracks": {
+      "displayName": "track_set",
+      "type": "component",
+      "repeatable": true,
+      "component": "sets.track-set"
     }
   }
 }

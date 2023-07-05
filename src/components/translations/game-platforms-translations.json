@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_translations_game_platforms_translations",
+  "info": {
+    "displayName": "Game Platforms Translations"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "short": {
+      "type": "string"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    }
+  }
+}

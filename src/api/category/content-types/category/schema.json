@@ -29,6 +29,18 @@
         "NieR",
         "YoRHa"
       ]
+    },
+    "titles": {
+      "displayName": "Categories Title",
+      "type": "component",
+      "repeatable": true,
+      "component": "translations.categories-title"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     }
   }
 }

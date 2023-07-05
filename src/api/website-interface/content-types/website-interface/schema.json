@@ -160,9 +160,6 @@
       "relation": "oneToOne",
       "target": "api::language.language"
     },
-    "select_language": {
-      "type": "string"
-    },
     "language": {
       "type": "string"
     },
@@ -271,15 +268,6 @@
     "status": {
       "type": "string"
     },
-    "transcribers": {
-      "type": "string"
-    },
-    "translators": {
-      "type": "string"
-    },
-    "proofreaders": {
-      "type": "string"
-    },
     "transcript_notice": {
       "type": "string"
     },
@@ -299,9 +287,6 @@
       "type": "string"
     },
     "open_settings": {
-      "type": "string"
-    },
-    "change_language": {
       "type": "string"
     },
     "open_search": {
@@ -355,9 +340,6 @@
     "secondary_language": {
       "type": "string"
     },
-    "combine_related_contents": {
-      "type": "string"
-    },
     "previous_content": {
       "type": "string"
     },
@@ -382,9 +364,6 @@
     "available_at": {
       "type": "string"
     },
-    "search_title": {
-      "type": "string"
-    },
     "want_it": {
       "type": "string"
     },
@@ -404,9 +383,6 @@
       "type": "string"
     },
     "only_display_unmarked_items": {
-      "type": "string"
-    },
-    "display_all_items": {
       "type": "string"
     },
     "table_of_contents": {
@@ -562,9 +538,6 @@
     "player_name_tooltip": {
       "type": "text"
     },
-    "download_scans": {
-      "type": "string"
-    },
     "search_placeholder": {
       "type": "string"
     },
@@ -590,6 +563,15 @@
       "type": "string"
     },
     "author": {
+      "type": "string"
+    },
+    "download_archive": {
+      "type": "string"
+    },
+    "available_at_x": {
+      "type": "string"
+    },
+    "view_on_x": {
       "type": "string"
     }
   }
