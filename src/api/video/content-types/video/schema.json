@@ -76,7 +76,8 @@
       "type": "enumeration",
       "enum": [
         "YouTube",
-        "NicoNico"
+        "NicoNico",
+        "Tumblr"
       ]
     },
     "live_chat": {

@@ -12,14 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "short": {
-      "type": "string",
-      "required": true
-    },
     "titles": {
       "displayName": "Game Platforms Translations",
       "type": "component",

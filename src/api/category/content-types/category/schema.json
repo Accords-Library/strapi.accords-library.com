@@ -12,16 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "short": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "series": {
       "type": "enumeration",
       "enum": [
